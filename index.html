@@ -3,68 +3,219 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meu Primeiro Site</title>
+    <title>Meu Portfólio</title>
     <link rel="stylesheet" href="style.css">
+    <!-- Fontes do Google (opcional) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <!-- Cabeçalho -->
+    <!-- CABEÇALHO COM MENU -->
     <header>
-        <nav class="menu">
-            <h1 class="logo">MeuSite</h1>
-            <ul>
+        <nav class="navbar">
+            <div class="logo">
+                <h2>&lt;DevIniciante/&gt;</h2>
+            </div>
+            <div class="menu-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <ul class="nav-menu">
                 <li><a href="#home">Início</a></li>
                 <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#projetos">Projetos</a></li>
+                <li><a href="#habilidades">Habilidades</a></li>
                 <li><a href="#contato">Contato</a></li>
             </ul>
         </nav>
     </header>
 
-    <!-- Conteúdo Principal -->
-    <main>
-        <!-- Seção Home -->
-        <section id="home" class="secao">
-            <h2>Bem-vindo ao meu site!</h2>
-            <p>Este é meu primeiro site com HTML, CSS e JavaScript.</p>
-            <button id="botaoClique">Clique aqui</button>
-        </section>
+    <!-- SEÇÃO HOME -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Olá, eu sou <span class="destaque">João Dev</span></h1>
+            <p>Desenvolvedor Web em formação | HTML, CSS, JavaScript</p>
+            <a href="#projetos" class="btn">Ver Projetos</a>
+        </div>
+    </section>
 
-        <!-- Seção Sobre -->
-        <section id="sobre" class="secao">
-            <h2>Sobre mim</h2>
-            <p>Estou aprendendo a programar e adorando criar coisas novas!</p>
-            <img src="https://via.placeholder.com/300x200" alt="Imagem de exemplo">
-        </section>
+    <!-- SEÇÃO SOBRE -->
+    <section id="sobre" class="sobre">
+        <div class="container">
+            <h2 class="section-title">Sobre Mim</h2>
+            <div class="sobre-content">
+                <div class="sobre-texto">
+                    <p>Olá! Sou um desenvolvedor iniciante apaixonado por tecnologia. Comecei meus estudos em programação há 1 ano e desde então venho criando projetos para praticar e evoluir.</p>
+                    <p>Atualmente estou focado em desenvolvimento web, aprendendo HTML, CSS e JavaScript. Meu objetivo é me tornar um desenvolvedor full stack e criar soluções incríveis!</p>
+                    <p><strong>Idade:</strong> 20 anos</p>
+                    <p><strong>Cidade:</strong> São Paulo - SP</p>
+                    <p><strong>Estudando:</strong> JavaScript avançado e React</p>
+                </div>
+                <div class="sobre-imagem">
+                    <!-- Substitua pela sua foto -->
+                    <div class="imagem-placeholder">
+                        <span>📸 Sua Foto</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-        <!-- Seção Contato -->
-        <section id="contato" class="secao">
-            <h2>Entre em contato</h2>
-            <form id="meuForm">
-                <div class="campo">
-                    <label for="nome">Nome:</label>
-                    <input type="text" id="nome" name="nome" required>
+    <!-- SEÇÃO PROJETOS -->
+    <section id="projetos" class="projetos">
+        <div class="container">
+            <h2 class="section-title">Meus Projetos</h2>
+            <div class="projetos-grid" id="projetos-container">
+                <!-- Projeto 1 -->
+                <div class="projeto-card">
+                    <div class="projeto-img">
+                        <div class="img-placeholder">🌐</div>
+                    </div>
+                    <div class="projeto-info">
+                        <h3>Site Pessoal</h3>
+                        <p>Meu primeiro site com HTML, CSS e JavaScript. Totalmente responsivo.</p>
+                        <div class="projeto-tags">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>JS</span>
+                        </div>
+                        <a href="#" class="btn-small">Ver código</a>
+                    </div>
                 </div>
-                
-                <div class="campo">
-                    <label for="email">E-mail:</label>
-                    <input type="email" id="email" name="email" required>
-                </div>
-                
-                <div class="campo">
-                    <label for="mensagem">Mensagem:</label>
-                    <textarea id="mensagem" name="mensagem" rows="4" required></textarea>
-                </div>
-                
-                <button type="submit" class="botao-enviar">Enviar</button>
-            </form>
-        </section>
-    </main>
 
-    <!-- Rodapé -->
+                <!-- Projeto 2 -->
+                <div class="projeto-card">
+                    <div class="projeto-img">
+                        <div class="img-placeholder">✅</div>
+                    </div>
+                    <div class="projeto-info">
+                        <h3>Lista de Tarefas</h3>
+                        <p>Aplicação para organizar tarefas com armazenamento local.</p>
+                        <div class="projeto-tags">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>JavaScript</span>
+                        </div>
+                        <a href="#" class="btn-small">Ver código</a>
+                    </div>
+                </div>
+
+                <!-- Projeto 3 -->
+                <div class="projeto-card">
+                    <div class="projeto-img">
+                        <div class="img-placeholder">🌦️</div>
+                    </div>
+                    <div class="projeto-info">
+                        <h3>App Clima</h3>
+                        <p>Consulta de previsão do tempo usando API pública.</p>
+                        <div class="projeto-tags">
+                            <span>API</span>
+                            <span>JavaScript</span>
+                            <span>CSS</span>
+                        </div>
+                        <a href="#" class="btn-small">Ver código</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SEÇÃO HABILIDADES -->
+    <section id="habilidades" class="habilidades">
+        <div class="container">
+            <h2 class="section-title">Minhas Habilidades</h2>
+            <div class="skills-container">
+                <div class="skill-item">
+                    <div class="skill-name">HTML5</div>
+                    <div class="skill-bar">
+                        <div class="skill-level" style="width: 80%">80%</div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-name">CSS3</div>
+                    <div class="skill-bar">
+                        <div class="skill-level" style="width: 70%">70%</div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-name">JavaScript</div>
+                    <div class="skill-bar">
+                        <div class="skill-level" style="width: 60%">60%</div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-name">Git/GitHub</div>
+                    <div class="skill-bar">
+                        <div class="skill-level" style="width: 65%">65%</div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-name">Responsividade</div>
+                    <div class="skill-bar">
+                        <div class="skill-level" style="width: 75%">75%</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SEÇÃO CONTATO -->
+    <section id="contato" class="contato">
+        <div class="container">
+            <h2 class="section-title">Entre em Contato</h2>
+            <div class="contato-content">
+                <form id="form-contato" class="contato-form">
+                    <div class="form-group">
+                        <label for="nome">Nome</label>
+                        <input type="text" id="nome" name="nome" required placeholder="Seu nome completo">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">E-mail</label>
+                        <input type="email" id="email" name="email" required placeholder="seu@email.com">
+                    </div>
+                    <div class="form-group">
+                        <label for="assunto">Assunto</label>
+                        <input type="text" id="assunto" name="assunto" required placeholder="Assunto da mensagem">
+                    </div>
+                    <div class="form-group">
+                        <label for="mensagem">Mensagem</label>
+                        <textarea id="mensagem" name="mensagem" rows="5" required placeholder="Digite sua mensagem..."></textarea>
+                    </div>
+                    <button type="submit" class="btn">Enviar Mensagem</button>
+                </form>
+                <div class="contato-info">
+                    <div class="info-item">
+                        <span class="info-icone">📧</span>
+                        <p>joao.dev@email.com</p>
+                    </div>
+                    <div class="info-item">
+                        <span class="info-icone">📱</span>
+                        <p>(11) 99999-9999</p>
+                    </div>
+                    <div class="info-item">
+                        <span class="info-icone">📍</span>
+                        <p>São Paulo - SP</p>
+                    </div>
+                    <div class="social-links">
+                        <a href="#" class="social-link">GitHub</a>
+                        <a href="#" class="social-link">LinkedIn</a>
+                        <a href="#" class="social-link">Instagram</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- RODAPÉ -->
     <footer>
-        <p>&copy; 2024 MeuSite. Todos os direitos reservados.</p>
+        <div class="container">
+            <p>&copy; 2025 João Dev - Todos os direitos reservados</p>
+            <p>Feito com ❤️ por um desenvolvedor iniciante</p>
+        </div>
     </footer>
 
-    <!-- JavaScript -->
     <script src="script.js"></script>
 </body>
 </html>
