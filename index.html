@@ -3,19 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meu Portfólio</title>
+    <title>Engenheiro Agrônomo - Currículo</title>
     <link rel="stylesheet" href="style.css">
-    <!-- Fontes do Google (opcional) -->
+    <!-- Fontes Google -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+    <!-- Ícones (Font Awesome) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
-    <!-- CABEÇALHO COM MENU -->
+    <!-- HEADER COM MENU -->
     <header>
         <nav class="navbar">
             <div class="logo">
-                <h2>&lt;DevIniciante/&gt;</h2>
+                <h2><i class="fas fa-leaf"></i> Eng. Agrônomo</h2>
             </div>
             <div class="menu-toggle" id="mobile-menu">
                 <span class="bar"></span>
@@ -25,19 +27,25 @@
             <ul class="nav-menu">
                 <li><a href="#home">Início</a></li>
                 <li><a href="#sobre">Sobre</a></li>
-                <li><a href="#projetos">Projetos</a></li>
+                <li><a href="#formacao">Formação</a></li>
+                <li><a href="#experiencia">Experiência</a></li>
                 <li><a href="#habilidades">Habilidades</a></li>
                 <li><a href="#contato">Contato</a></li>
             </ul>
         </nav>
     </header>
 
-    <!-- SEÇÃO HOME -->
+    <!-- SEÇÃO HOME / HERO -->
     <section id="home" class="hero">
+        <div class="hero-overlay"></div>
         <div class="hero-content">
-            <h1>Olá, eu sou <span class="destaque">Gabriel</span></h1>
-            <p>Desenvolvedor Web em formação | HTML, CSS, JavaScript</p>
-            <a href="#projetos" class="btn">Ver Projetos</a>
+            <h1>João Carlos Silva</h1>
+            <h2>Engenheiro Agrônomo</h2>
+            <p>CREA: 123456-D | Especialista em Agricultura Sustentável</p>
+            <div class="hero-buttons">
+                <a href="#contato" class="btn btn-primary">Entre em Contato</a>
+                <a href="#experiencia" class="btn btn-secondary">Ver Experiência</a>
+            </div>
         </div>
     </section>
 
@@ -46,115 +54,213 @@
         <div class="container">
             <h2 class="section-title">Sobre Mim</h2>
             <div class="sobre-content">
-                <div class="sobre-texto">
-                    <p>Olá! Sou um desenvolvedor iniciante apaixonado por tecnologia. Comecei meus estudos em programação há 1 ano e desde então venho criando projetos para praticar e evoluir.</p>
-                    <p>Atualmente estou focado em desenvolvimento web, aprendendo HTML, CSS e JavaScript. Meu objetivo é me tornar um desenvolvedor full stack e criar soluções incríveis!</p>
-                    <p><strong>Idade:</strong> 20 anos</p>
-                    <p><strong>Cidade:</strong> São Paulo - SP</p>
-                    <p><strong>Estudando:</strong> JavaScript avançado e React</p>
-                </div>
                 <div class="sobre-imagem">
-                    <!-- Substitua pela sua foto -->
-                    <div class="imagem-placeholder">
-                        <span>📸 Sua Foto</span>
+                    <!-- Coloque sua foto aqui -->
+                    <div class="foto-placeholder">
+                        <i class="fas fa-user-circle"></i>
+                    </div>
+                </div>
+                <div class="sobre-texto">
+                    <p>Engenheiro Agrônomo formado pela <strong>Universidade Federal de Lavras (UFLA)</strong>, com experiência em manejo de culturas, consultoria técnica e agricultura de precisão. Apaixonado por desenvolver soluções sustentáveis que aumentem a produtividade no campo.</p>
+                    <p>Atualmente atuo como consultor autônomo para pequenos e médios produtores, auxiliando no planejamento agrícola, controle de pragas e otimização de recursos.</p>
+                    <div class="sobre-info">
+                        <div class="info-item">
+                            <i class="fas fa-calendar-alt"></i>
+                            <span><strong>Idade:</strong> 28 anos</span>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span><strong>Localização:</strong> Ribeirão Preto - SP</span>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-tractor"></i>
+                            <span><strong>Disponibilidade:</strong> Imediata para viagens</span>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- SEÇÃO PROJETOS -->
-    <section id="projetos" class="projetos">
+    <!-- SEÇÃO FORMAÇÃO ACADÊMICA -->
+    <section id="formacao" class="formacao">
         <div class="container">
-            <h2 class="section-title">Meus Projetos</h2>
-            <div class="projetos-grid" id="projetos-container">
-                <!-- Projeto 1 -->
-                <div class="projeto-card">
-                    <div class="projeto-img">
-                        <div class="img-placeholder">🌐</div>
+            <h2 class="section-title">Formação Acadêmica</h2>
+            <div class="formacao-grid">
+                <div class="formacao-card">
+                    <div class="formacao-icon">
+                        <i class="fas fa-graduation-cap"></i>
                     </div>
-                    <div class="projeto-info">
-                        <h3>Site Pessoal</h3>
-                        <p>Meu primeiro site com HTML, CSS e JavaScript. Totalmente responsivo.</p>
-                        <div class="projeto-tags">
-                            <span>HTML</span>
-                            <span>CSS</span>
-                            <span>JS</span>
-                        </div>
-                        <a href="#" class="btn-small">Ver código</a>
+                    <div class="formacao-info">
+                        <h3>Bacharelado em Agronomia</h3>
+                        <p class="instituicao">Universidade Federal de Lavras (UFLA)</p>
+                        <p class="periodo">2015 - 2020</p>
+                        <p class="descricao">CR: 8.5 | Projeto de conclusão: "Manejo Integrado de Pragas na Cultura da Soja"</p>
                     </div>
                 </div>
 
-                <!-- Projeto 2 -->
-                <div class="projeto-card">
-                    <div class="projeto-img">
-                        <div class="img-placeholder">✅</div>
+                <div class="formacao-card">
+                    <div class="formacao-icon">
+                        <i class="fas fa-leaf"></i>
                     </div>
-                    <div class="projeto-info">
-                        <h3>Lista de Tarefas</h3>
-                        <p>Aplicação para organizar tarefas com armazenamento local.</p>
-                        <div class="projeto-tags">
-                            <span>HTML</span>
-                            <span>CSS</span>
-                            <span>JavaScript</span>
-                        </div>
-                        <a href="#" class="btn-small">Ver código</a>
-                    </div>
-                </div>
-
-                <!-- Projeto 3 -->
-                <div class="projeto-card">
-                    <div class="projeto-img">
-                        <div class="img-placeholder">🌦️</div>
-                    </div>
-                    <div class="projeto-info">
-                        <h3>App Clima</h3>
-                        <p>Consulta de previsão do tempo usando API pública.</p>
-                        <div class="projeto-tags">
-                            <span>API</span>
-                            <span>JavaScript</span>
-                            <span>CSS</span>
-                        </div>
-                        <a href="#" class="btn-small">Ver código</a>
+                    <div class="formacao-info">
+                        <h3>Especialização em Agricultura de Precisão</h3>
+                        <p class="instituicao">ESALQ/USP</p>
+                        <p class="periodo">2021 - 2022</p>
+                        <p class="descricao">Pós-graduação Lato Sensu com foco em geotecnologias e sensoriamento remoto</p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- SEÇÃO HABILIDADES -->
+    <!-- SEÇÃO EXPERIÊNCIA PROFISSIONAL -->
+    <section id="experiencia" class="experiencia">
+        <div class="container">
+            <h2 class="section-title">Experiência Profissional</h2>
+            <div class="experiencia-list">
+                <div class="experiencia-item">
+                    <div class="experiencia-header">
+                        <h3>Consultor Agronômico Autônomo</h3>
+                        <p class="periodo">2022 - Presente</p>
+                    </div>
+                    <p class="empresa"><i class="fas fa-building"></i> Autônomo - Região de Ribeirão Preto</p>
+                    <ul class="atividades">
+                        <li>Atendimento a 15 propriedades rurais, totalizando 2.500 hectares</li>
+                        <li>Elaboração de planos de manejo para soja, milho e cana-de-açúcar</li>
+                        <li>Implementação de técnicas de agricultura de precisão, reduzindo custos em 15%</li>
+                        <li>Diagnóstico e controle de pragas e doenças</li>
+                    </ul>
+                </div>
+
+                <div class="experiencia-item">
+                    <div class="experiencia-header">
+                        <h3>Estagiário em Pesquisa Agrícola</h3>
+                        <p class="periodo">2019 - 2020</p>
+                    </div>
+                    <p class="empresa"><i class="fas fa-flask"></i> Embrapa Meio Ambiente</p>
+                    <ul class="atividades">
+                        <li>Auxílio em pesquisas sobre fixação biológica de nitrogênio</li>
+                        <li>Coleta e análise de dados em campo e laboratório</li>
+                        <li>Participação na publicação de 2 artigos científicos</li>
+                    </ul>
+                </div>
+
+                <div class="experiencia-item">
+                    <div class="experiencia-header">
+                        <h3>Auxiliar Técnico</h3>
+                        <p class="periodo">2018 - 2019</p>
+                    </div>
+                    <p class="empresa"><i class="fas fa-seedling"></i> Fazenda Experimental da UFLA</p>
+                    <ul class="atividades">
+                        <li>Acompanhamento de experimentos com diferentes cultivares</li>
+                        <li>Manejo de irrigação e controle fitossanitário</li>
+                        <li>Orientação a produtores visitantes</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SEÇÃO HABILIDADES TÉCNICAS -->
     <section id="habilidades" class="habilidades">
         <div class="container">
-            <h2 class="section-title">Minhas Habilidades</h2>
-            <div class="skills-container">
-                <div class="skill-item">
-                    <div class="skill-name">HTML5</div>
-                    <div class="skill-bar">
-                        <div class="skill-level" style="width: 80%">80%</div>
+            <h2 class="section-title">Habilidades Técnicas</h2>
+            <div class="habilidades-content">
+                <div class="habilidades-categoria">
+                    <h3><i class="fas fa-chart-line"></i> Agricultura de Precisão</h3>
+                    <div class="skill-item">
+                        <span class="skill-name">GPS Agrícola / Georreferenciamento</span>
+                        <div class="skill-bar"><div class="skill-level" style="width: 85%">85%</div></div>
+                    </div>
+                    <div class="skill-item">
+                        <span class="skill-name">Drones (Pilotagem e processamento)</span>
+                        <div class="skill-bar"><div class="skill-level" style="width: 75%">75%</div></div>
+                    </div>
+                    <div class="skill-item">
+                        <span class="skill-name">Sistemas de Informação Geográfica (QGIS)</span>
+                        <div class="skill-bar"><div class="skill-level" style="width: 80%">80%</div></div>
                     </div>
                 </div>
-                <div class="skill-item">
-                    <div class="skill-name">CSS3</div>
-                    <div class="skill-bar">
-                        <div class="skill-level" style="width: 70%">70%</div>
+
+                <div class="habilidades-categoria">
+                    <h3><i class="fas fa-flask"></i> Manejo e Produção</h3>
+                    <div class="skill-item">
+                        <span class="skill-name">Manejo Integrado de Pragas</span>
+                        <div class="skill-bar"><div class="skill-level" style="width: 90%">90%</div></div>
+                    </div>
+                    <div class="skill-item">
+                        <span class="skill-name">Fertilidade do Solo e Nutrição</span>
+                        <div class="skill-bar"><div class="skill-level" style="width: 85%">85%</div></div>
+                    </div>
+                    <div class="skill-item">
+                        <span class="skill-name">Sistemas de Irrigação</span>
+                        <div class="skill-bar"><div class="skill-level" style="width: 70%">70%</div></div>
                     </div>
                 </div>
-                <div class="skill-item">
-                    <div class="skill-name">JavaScript</div>
-                    <div class="skill-bar">
-                        <div class="skill-level" style="width: 60%">60%</div>
+
+                <div class="habilidades-categoria">
+                    <h3><i class="fas fa-laptop"></i> Softwares</h3>
+                    <div class="skill-item">
+                        <span class="skill-name">AutoCAD (básico)</span>
+                        <div class="skill-bar"><div class="skill-level" style="width: 60%">60%</div></div>
+                    </div>
+                    <div class="skill-item">
+                        <span class="skill-name">Pacote Office (Excel avançado)</span>
+                        <div class="skill-bar"><div class="skill-level" style="width: 90%">90%</div></div>
+                    </div>
+                    <div class="skill-item">
+                        <span class="skill-name">Softwares de gestão agrícola</span>
+                        <div class="skill-bar"><div class="skill-level" style="width: 75%">75%</div></div>
                     </div>
                 </div>
-                <div class="skill-item">
-                    <div class="skill-name">Git/GitHub</div>
-                    <div class="skill-bar">
-                        <div class="skill-level" style="width: 65%">65%</div>
+            </div>
+
+            <div class="outras-habilidades">
+                <h3><i class="fas fa-plus-circle"></i> Outras Competências</h3>
+                <div class="tags">
+                    <span class="tag">CNH AB</span>
+                    <span class="tag">Inglês técnico</span>
+                    <span class="tag">Espanhol intermediário</span>
+                    <span class="tag">Trabalho em equipe</span>
+                    <span class="tag">Liderança técnica</span>
+                    <span class="tag">Comunicação com produtores</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SEÇÃO CURSOS E CERTIFICAÇÕES -->
+    <section id="cursos" class="cursos">
+        <div class="container">
+            <h2 class="section-title">Cursos e Certificações</h2>
+            <div class="cursos-grid">
+                <div class="curso-item">
+                    <i class="fas fa-certificate"></i>
+                    <div>
+                        <h4>Operação de Drones para Agricultura</h4>
+                        <p>Senar - 40h (2023)</p>
                     </div>
                 </div>
-                <div class="skill-item">
-                    <div class="skill-name">Responsividade</div>
-                    <div class="skill-bar">
-                        <div class="skill-level" style="width: 75%">75%</div>
+                <div class="curso-item">
+                    <i class="fas fa-certificate"></i>
+                    <div>
+                        <h4>Manejo de Solo e Água</h4>
+                        <p>Embrapa - 60h (2022)</p>
+                    </div>
+                </div>
+                <div class="curso-item">
+                    <i class="fas fa-certificate"></i>
+                    <div>
+                        <h4>NR 31 - Segurança no Trabalho Rural</h4>
+                        <p>SEST/SENAT - 20h (2023)</p>
+                    </div>
+                </div>
+                <div class="curso-item">
+                    <i class="fas fa-certificate"></i>
+                    <div>
+                        <h4>Aplicação de Defensivos Agrícolas</h4>
+                        <p>Andav - 16h (2022)</p>
                     </div>
                 </div>
             </div>
@@ -166,44 +272,51 @@
         <div class="container">
             <h2 class="section-title">Entre em Contato</h2>
             <div class="contato-content">
-                <form id="form-contato" class="contato-form">
-                    <div class="form-group">
-                        <label for="nome">Nome</label>
-                        <input type="text" id="nome" name="nome" required placeholder="Seu nome completo">
-                    </div>
-                    <div class="form-group">
-                        <label for="email">E-mail</label>
-                        <input type="email" id="email" name="email" required placeholder="seu@email.com">
-                    </div>
-                    <div class="form-group">
-                        <label for="assunto">Assunto</label>
-                        <input type="text" id="assunto" name="assunto" required placeholder="Assunto da mensagem">
-                    </div>
-                    <div class="form-group">
-                        <label for="mensagem">Mensagem</label>
-                        <textarea id="mensagem" name="mensagem" rows="5" required placeholder="Digite sua mensagem..."></textarea>
-                    </div>
-                    <button type="submit" class="btn">Enviar Mensagem</button>
-                </form>
                 <div class="contato-info">
-                    <div class="info-item">
-                        <span class="info-icone">📧</span>
-                        <p>mendonca.machado@escola.pr.gov.br</p>
+                    <div class="contato-card">
+                        <i class="fas fa-phone-alt"></i>
+                        <div>
+                            <h4>Telefone / WhatsApp</h4>
+                            <p>(16) 99999-9999</p>
+                        </div>
                     </div>
-                    <div class="info-item">
-                        <span class="info-icone">📱</span>
-                        <p>(43) 9961814128</p>
+                    <div class="contato-card">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h4>E-mail</h4>
+                            <p>joao.agronomo@email.com</p>
+                        </div>
                     </div>
-                    <div class="info-item">
-                        <span class="info-icone">📍</span>
-                        <p>São Paulo - SP</p>
+                    <div class="contato-card">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h4>Endereço</h4>
+                            <p>Ribeirão Preto - SP</p>
+                        </div>
                     </div>
-                    <div class="social-links">
-                        <a href="#" class="social-link">GitHub</a>
-                        <a href="#" class="social-link">LinkedIn</a>
-                        <a href="#" class="social-link">Instagram</a>
+                    <div class="social-media">
+                        <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-whatsapp"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-researchgate"></i></a>
                     </div>
                 </div>
+
+                <form id="form-contato" class="contato-form">
+                    <div class="form-group">
+                        <input type="text" id="nome" name="nome" placeholder="Seu nome" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" name="email" placeholder="Seu e-mail" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" id="assunto" name="assunto" placeholder="Assunto" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="mensagem" name="mensagem" rows="5" placeholder="Sua mensagem" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-block">Enviar Mensagem</button>
+                </form>
             </div>
         </div>
     </section>
@@ -211,8 +324,8 @@
     <!-- RODAPÉ -->
     <footer>
         <div class="container">
-            <p>&copy; 2026 Gabriel - Todos os direitos reservados</p>
-            <p>Feito com ❤️ por um desenvolvedor iniciante</p>
+            <p><i class="fas fa-leaf"></i> Engenheiro Agrônomo João Carlos Silva | CREA 123456-D</p>
+            <p>&copy; 2025 - Todos os direitos reservados</p>
         </div>
     </footer>
 
